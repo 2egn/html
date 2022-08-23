@@ -1,189 +1,206 @@
-<!DOCTYPE html><!--문서 타입(html5)-->
+<!DOCTYPE html>
+<!--문서 타입(html5)-->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"><!--유니코드 문자셋-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag Practicing</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById('range').onchange = function () {
-                document.getElementById('rangeValue').innerText = this.value
-            }
-        });
-    </script>
+  <meta charset="UTF-8">
+  <!--유니코드 문자셋-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag Practicing</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById('range').onchange = function () {
+        document.getElementById('rangeValue').innerText = this.value
+      }
+    });
+  </script>
 </head>
+
 <body>
-    <h1>h1 태그</h1>
-    <h2>h2 태그</h2>
-    <h3>h3 태그</h3>
-    <h4>h4 태그</h4>
-    <h5>h5 태그</h5>
-    <h6>h6 태그</h6>
-    <!--글자크기-->
-    <i>i talic, 기울임(날려쓰는 용도)</i><br>
-    <b>b old, 굵게(굵게 쓰는 용도)</b><br>
-    <strong>strong, 굵게(중요한 것을 표시할때 쓰는 용도)</strong><br>
-    <p>p aragraph, 문장</p>
-    <u>u underline, 밑줄</u>
-    <hr>
-    <p>문단1, 안녕하세요 저는 이엔입니다
-        hello im 2egn
-    </p>
-    <p>문단2, 이것은 html5를 사용한 문단입니다
-        this is paragraph using html5 </p>
-    <hr>
-    hr, 줄긋기이며 위에 있는 선을 이 태그로 사용해서 만들었습니다<br>
-    <sub>sub script, 아래첨자</sub>
-    비교용
-    <sup>sup script, 위첨자</sup>
-    <strike>strike, 취소선</strike>
-    <em>em, 기울임(강조해서 쓰는 용도)</em>입니다<br>
-    <ruby>
-        ruby 태그<rt>rt 태그</rt>
-    </ruby>
-    <p>그 글자의 발음 등을 나타낼 때 주로 사용함</p>
-    br<br>태그<br>줄바꿈 태그<br>
-    <mark>mark, 형광펜 줄 강조</mark><br>
-    <time datetime="2022-08-20">2022년 08월 20일</time>
-    시간을 표시할때 사용하며, 겉으로는 변화 X지만 분석할때 볼 수 있음.
-    <blockquote cite="https://www.pinkcoding.com/class/web/HTML/blockquote-tag/">blockquote 태그는 인용문을 사용할 때 사용합니다. 이러한 글을 이러한 사이트에서 가져왔음을 알릴 때 사용합니다.</blockquote>
-    <pre>pre 태그는  입력한  
+  <h1>h1 태그</h1>
+  <h2>h2 태그</h2>
+  <h3>h3 태그</h3>
+  <h4>h4 태그</h4>
+  <h5>h5 태그</h5>
+  <h6>h6 태그</h6>
+  <!--글자크기-->
+  <i>i talic, 기울임(날려쓰는 용도)</i><br>
+  <b>b old, 굵게(굵게 쓰는 용도)</b><br>
+  <strong>strong, 굵게(중요한 것을 표시할때 쓰는 용도)</strong><br>
+  <p>p aragraph, 문장</p>
+  <u>u underline, 밑줄</u>
+  <hr>
+  <p>문단1, 안녕하세요 저는 이엔입니다
+    hello im 2egn
+  </p>
+  <p>문단2, 이것은 html5를 사용한 문단입니다
+    this is paragraph using html5 </p>
+  <hr>
+  hr, 줄긋기이며 위에 있는 선을 이 태그로 사용해서 만들었습니다<br>
+  <sub>sub script, 아래첨자</sub>
+  비교용
+  <sup>sup script, 위첨자</sup>
+  <strike>strike, 취소선</strike>
+  <em>em, 기울임(강조해서 쓰는 용도)</em>입니다<br>
+  <ruby>
+    ruby 태그<rt>rt 태그</rt>
+  </ruby>
+  <p>그 글자의 발음 등을 나타낼 때 주로 사용함</p>
+  br<br>태그<br>줄바꿈 태그<br>
+  <mark>mark, 형광펜 줄 강조</mark><br>
+  <time datetime="2022-08-20">2022년 08월 20일</time>
+  시간을 표시할때 사용하며, 겉으로는 변화 X지만 분석할때 볼 수 있음.
+  <blockquote cite="https://www.pinkcoding.com/class/web/HTML/blockquote-tag/">blockquote 태그는 인용문을 사용할 때 사용합니다. 이러한 글을
+    이러한 사이트에서 가져왔음을 알릴 때 사용합니다.</blockquote>
+  <pre>pre 태그는  입력한  
         그       대로 표시해줍   니다
     </pre>
-    dl 태그는 용어, 이름의 뜻을 설명해주는 설명 리스트를 정의하는곳에 사용됩니다
-    <dl>
-        <dt>용어나 이름(dt 태그 사용)</dt>
-        <dd>그에 대한 뜻, 설명(dd 태그 사용)</dd>
-        <dt>용어</dt>
-        <dd>뜻</dd>
-    </dl>
-    <p>ul은 번호 없는 리스트, ol은 번호 있는 리스트, li는 그 리스트 목록의 시작과 끝을 나타냄</p>
-    <ul>
-        <li>구글</li>
-        <li>크롬</li>
-        <li>마소</li>
-    </ul>
-    <ol>
-        <li>구글</li>
-        <li>크롬</li>
-        <li>마소</li>
-    </ol>
-    <a title="구글 웹사이트" href="https://www.google.com">구글<a>
-    <!--마우스 대면 나오는 설명      링크                  표시이름 -->
-    <a ping="데이터 전송받을 주소" title="링크설명" href="주소">링크표시명</a><!--ping은 링크 통계를 알려주며 서버 기술이 필요함, php학습--><br/>
-    <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003239508264882236/unknown.png" alt="me and mincie :)" width="200" height="170"/>
-    <!--                               링크                                                         마우스 대면 나오는 설명(필수)    넓이         높이-->
-    <a href='https://github.com/2egn' target="_blank">
-    <!--       이동할 주소               이거 넣으면 새창에서 열림-->
-        <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003233732519530598/20220509_013129.jpg" alt="2egn" width="170" height="170"/>
-    </a>
-    <----- my github
-    <br/>
-    <table bgcolor="skyblue" width="500">
+  dl 태그는 용어, 이름의 뜻을 설명해주는 설명 리스트를 정의하는곳에 사용됩니다
+  <dl>
+    <dt>용어나 이름(dt 태그 사용)</dt>
+    <dd>그에 대한 뜻, 설명(dd 태그 사용)</dd>
+    <dt>용어</dt>
+    <dd>뜻</dd>
+  </dl>
+  <p>ul은 번호 없는 리스트, ol은 번호 있는 리스트, li는 그 리스트 목록의 시작과 끝을 나타냄</p>
+  <ul>
+    <li>구글</li>
+    <li>크롬</li>
+    <li>마소</li>
+  </ul>
+  <ol>
+    <li>구글</li>
+    <li>크롬</li>
+    <li>마소</li>
+  </ol>
+  <a title="구글 웹사이트" href="https://www.google.com">구글<a>
+      <!--마우스 대면 나오는 설명      링크                  표시이름 -->
+      <a ping="데이터 전송받을 주소" title="링크설명" href="주소">링크표시명</a>
+      <!--ping은 링크 통계를 알려주며 서버 기술이 필요함, php학습--><br />
+      <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003239508264882236/unknown.png"
+        alt="me and mincie :)" width="200" height="170" />
+      <!--                               링크                                                         마우스 대면 나오는 설명(필수)    넓이         높이-->
+      <a href='https://github.com/2egn' target="_blank">
+        <!--       이동할 주소               이거 넣으면 새창에서 열림-->
+        <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003233732519530598/20220509_013129.jpg"
+          alt="2egn" width="170" height="170" />
+      </a>
+      <----- my github <br />
+      <table bgcolor="skyblue" width="500">
         <tr align="center">
-            <td style="color:red">일</td>
-            <td>월</td>
-            <td>화</td>
-            <td>수</td>
-            <td>목</td>
-            <td>금</td>
-            <td style="color:darkblue">토</td>
+          <td style="color:red">일</td>
+          <td>월</td>
+          <td>화</td>
+          <td>수</td>
+          <td>목</td>
+          <td>금</td>
+          <td style="color:darkblue">토</td>
         </tr>
         <tr align="center">
-            <td bgcolor="gray"></td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td style="color:darkblue">6</td>
+          <td bgcolor="gray"></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td style="color:darkblue">6</td>
         </tr>
         <tr align="center">
-            <td style="color:red">7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td style="color:darkblue">13</td>
+          <td style="color:red">7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td style="color:darkblue">13</td>
         </tr>
         <tr align="center">
-            <td style="color:red">14</td>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td style="color:darkblue">20</td>
+          <td style="color:red">14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td style="color:darkblue">20</td>
         </tr>
         <tr align="center">
-            <td style="color:red">21</td>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td style="color:darkblue">27</td>
+          <td style="color:red">21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td style="color:darkblue">27</td>
         </tr>
         <tr align="center">
-            <td style="color:red">28</td>
-            <td>29</td>
-            <td>30</td>
-            <td>31</td>
-            <td bgcolor="gray" colspan="3"></td>
+          <td style="color:red">28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td bgcolor="gray" colspan="3"></td>
         </tr>
-    </table>
-    <hr/>
-    <form name ="text">
+      </table>
+      <hr />
+      <form name="text">
         <input type="text" name="text" value="text">
-    </form>
-    <form name ="email">
+      </form>
+      <form name="email">
         <input type="email" name="email" value="email">
-    </form>
-    <form name ="url">
+      </form>
+      <form name="url">
         <input type="url" name="url" value="url">
-    </form>
-    <pre>       1 per arrow               5 per arrow</pre>
-    <form name ="number">
+      </form>
+      <pre>       1 per arrow               5 per arrow</pre>
+      <form name="number">
         <input type="number" name="number" value="number">
         <!--<input type='number' name='userPhoneNumber' pattern='\d*' />-->
         <!--모바일에 적용할 수 있는 pattern.-->
 
         <input type="number" name="stepnumber" value="stepnumber" step="5">
-    </form>
-    <br/>
-    Phonenumber Input
-    <form name ="tel">
+      </form>
+      <br />
+      Phonenumber Input
+      <form name="tel">
         <input type='tel' name='phone1' />-
         <input type='tel' name='phone2' />-
         <input type='tel' name='phone3' />
-    </form>
-    <br/>
-    color input
-    <form name ="color">
+      </form>
+      <br />
+      color input
+      <form name="color">
         <input type="color" name="color">
-    </form>
-    <br/>
-    <form name ="slider">
-        <input type="range" id="range" name="slider" min="1" max="100" value="50" step="1"/>
-    </form>
-    <p id='rangeValue'>50</p>
-    <form name = "pw">
+      </form>
+      <br />
+      <form name="slider">
+        <input type="range" id="range" name="slider" min="1" max="100" value="50" step="1" />
+      </form>
+      <p id='rangeValue'>50</p>
+      <form name="pw">
         <input type="password" name="pw">
-    </form>
-    <br/>
-    <form name = "check">
-        meow <input type="checkbox" name="checkbox"/>
-    </form>
-    <form name = "radio">
-        owo <input type="radio" name="radiocircle" checked/><!--checked 넣으면 체크된채로 나옴-->
-    </form>
-    <br/>
-    my birthday :3
-    <form name = "date">
-        <input type="date" name="date" value='2006-08-21'/>
-        <input type='month' name='month' value='2006-08'/>
-    </form>
+      </form>
+      <br />
+      <form name="check">
+        meow <input type="checkbox" name="checkbox" />
+      </form>
+      <form name="radio">
+        owo <input type="radio" name="radiocircle" checked />
+        <!--checked 넣으면 체크된채로 나옴-->
+      </form>
+      <br />
+      my birthday :3
+      <form name="date">
+        <input type="date" name="date" value='2006-08-21' />
+        <input type='month' name='month' value='2006-08' />
+      </form>
+      <form name="math" oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type='number' id='num1' name='num1' value='0' /> +
+        <input type='number' id='num2' name='num2' value='0' /> =
+        <output for='num1, num2' name='result'></output>
+      </form>
+      <form name="button">
+      <input type="button" value="I'm not a    robot" onclick="alert('i dont believe')">
+      </form>
 </body>
+
 </html>
