@@ -14,21 +14,22 @@
         document.getElementById('rangeValue').innerText = this.value
       }
     });
-
+  </script>
+  <script>
     cnt = 0;
     stopCheck = false;
-    setInterval(function(){
-        if(stopCheck == false) {
-            document.getElementsByTagName('progress')[0].value = cnt;
-            document.getElementsByTagName('meter')[0].value = cnt;
-            document.getElementById('progressvalue').innerText = cnt + '%';
-            cnt++;
-            if (cnt > 100) {
-                stopCheck = true;
-                document.getElementById('progressdone').innerText = "All done!(but whats done?)";
-            }
+    setInterval(function () {
+      if (stopCheck == false) {
+        document.getElementsByTagName('progress')[0].value = cnt;
+        document.getElementsByTagName('meter')[0].value = cnt;
+        document.getElementById('progressvalue').innerText = cnt + '%';
+        cnt++;
+        if (cnt > 100) {
+          stopCheck = true;
+          document.getElementById('progressdone').innerText = "All done!(but whats done?)";
         }
-    },100);
+      }
+    }, 100);
   </script>
 </head>
 
@@ -89,202 +90,251 @@
     <li>크롬</li>
     <li>마소</li>
   </ol>
-  <a title="구글 웹사이트" href="https://www.google.com">구글<a>
-      <!--마우스 대면 나오는 설명      링크                  표시이름 -->
-      <a ping="데이터 전송받을 주소" title="링크설명" href="주소">링크표시명</a>
-      <!--ping은 링크 통계를 알려주며 서버 기술이 필요함, php학습--><br />
-      <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003239508264882236/unknown.png"
-        alt="me and mincie :)" width="200" height="170" />
-      <!--                               링크                                                         마우스 대면 나오는 설명(필수)    넓이         높이-->
-      <a href='https://github.com/2egn' target="_blank">
-        <!--       이동할 주소               이거 넣으면 새창에서 열림-->
-        <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003233732519530598/20220509_013129.jpg"
-          alt="2egn" width="170" height="170" />
-      </a>
-      <----- my github <br />
-      <table bgcolor="skyblue" width="500">
-        <tr align="center">
-          <td style="color:red">일</td>
-          <td>월</td>
-          <td>화</td>
-          <td>수</td>
-          <td>목</td>
-          <td>금</td>
-          <td style="color:darkblue">토</td>
-        </tr>
-        <tr align="center">
-          <td bgcolor="gray"></td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td style="color:darkblue">6</td>
-        </tr>
-        <tr align="center">
-          <td style="color:red">7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
-          <td style="color:darkblue">13</td>
-        </tr>
-        <tr align="center">
-          <td style="color:red">14</td>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td style="color:darkblue">20</td>
-        </tr>
-        <tr align="center">
-          <td style="color:red">21</td>
-          <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
-          <td>26</td>
-          <td style="color:darkblue">27</td>
-        </tr>
-        <tr align="center">
-          <td style="color:red">28</td>
-          <td>29</td>
-          <td>30</td>
-          <td>31</td>
-          <td bgcolor="gray" colspan="3"></td>
-        </tr>
-      </table>
-      <hr />
-      <form name="text">
-        <input type="text" name="text" value="text">
-      </form>
-      <form name="email">
-        <input type="email" name="email" value="email">
-      </form>
-      <form name="url">
-        <input type="url" name="url" value="url">
-      </form>
-      <pre>       1 per arrow               5 per arrow</pre>
-      <form name="number">
-        <input type="number" name="number" value="number">
-        <!--<input type='number' name='userPhoneNumber' pattern='\d*' />-->
-        <!--모바일에 적용할 수 있는 pattern.-->
-        <input type="number" name="stepnumber" value="stepnumber" step="5">
-      </form>
-      </a>
-      <br />
-      Phonenumber Input
-      <form name="tel">
-        <input type='tel' name='phone1' />-
-        <input type='tel' name='phone2' />-
-        <input type='tel' name='phone3' />
-      </form>
-      <br />
-      color input
-      <form name="color">
-        <input type="color" name="color">
-      </form>
-      <br />
-      <form name="slider">
-        <input type="range" id="range" name="slider" min="1" max="100" value="50" step="1" />
-      </form>
-      <p id='rangeValue'>50</p>
-      <form name="pw">
-        <input type="password" name="pw">
-      </form>
-      <br />
-      <form name="check">
-        meow <input type="checkbox" name="checkbox" />
-      </form>
-      <form name="radio">
-        owo <input type="radio" name="radiocircle" checked />
-        <!--checked 넣으면 체크된채로 나옴-->
-      </form>
-      <br />
-      my birthday :3
-      <form name="date">
-        <input type="date" name="date" value='2006-08-21' />
-        <input type='month' name='month' value='2006-08' />
-      </form>
-      <form name="math" oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
-        <input type='number' id='num1' name='num1' value='0' /> +
-        <input type='number' id='num2' name='num2' value='0' /> =
-        <output for='num1, num2' name='result'></output>
-      </form>
-      <form name="button">
-        <input type="button" value="I'm not a robot" onclick="alert('i dont believe')">
-      </form> 단일파일 선택
-      <form name="file">
-        <input type="file" action="idk" method="post" enctype="multipart/form-data">
-      </form> 다중파일 선택
-      <form name="file">
-        <input type="file" action="idk" method="post" enctype="multipart/form-data" multiple />
-      </form>
-      
-      <form name="submitting" action="result.php" method="post">
-        아이디 : <input type='text' name='id' /></br>
-        별명 : <input type='text' name='nickName' /></br>
-        <input type='submit' value='전송' />
-      <form name="remove" action="result.php" method="post">
-      </br>
-        <input type="text" name="typingarea" placeholder='type something' autofocus/><!--autofocus가 있으면 우선적으로 그 텍스트창 클릭되있고 placeholder는 텍스트창에 회색으로 설명메세지뜨는거-->
-        <input type="reset" value='delete all'/>
-        </form> 
-      </form>
-    </form>
-    <form name="placeholder">
-      <input type="text" name="placeholder" placeholder="Autocomplete" autocomplete='on'/><!--자동완성 autocomplete on-->  
-    </form>
-  </br>
-    <form name="reqornot">
-      <input type="text" name="notreq" placeholder="선택입력"/>
-      <input type="text" name="req" placeholder="필수입력" required/>
-    </br>
-    <input type="submit" value="입력">
-    </form>
-    <form name="read">
-      <input type="text" name="readonly" value='Cat'readonly/></br>
-      <textarea name="textarea" readonly>Feline</textarea></br>
-    </form>
-    <form name="label">
-      </br><label for="id">click to focus</label></br></br>
-      <input type="text" id="id"></br>
-    </form>
-    <h1>Which pet do you prefer?</h1>
-    <select name="petchoose">
-      <option value="dog">dog</option>
-      <option value="cat" selected>cat</option>  <!--select-->
-      <option value="bird">bird</option>
-      <option value="rabbit">rabbit</option>
-    </select>
-  </br>
-</br>
-    <input type="text" list="animal">
-    <datalist id="animal">
-      <option value="dog">dog</option>
-      <option value="cat">cat</option>            <!--datalist-->
-      <option value="bird">bird</option>
-      <option value="rabbit">rabbit</option>
-    </datalist>
-    <h1>Where do you want to travel?</h1>
-    <select name="travel">
-      <optgroup label="mountain">
-        <option value="alps">Swiss Alps</option>
-        <option value="fuji">Japan Fuji</option> 
-      </optgroup>
-      <optgroup label="isle">
-        <option value="hawaii">USA Hawaii</option>
-        <option value="rabbit">Indonesia Bali</option>
-      </optgroup>
-      </select>
-    </br>
-    </br>
-      <progress value='0' max='100'></progress></br>
-      <meter min='0' max='100' low='30' optimum='50' value='0' high='80'></meter></br>
-      <b id="progressvalue"></b>
-      <p id="progressdone"></p>
+  <a title="구글 웹사이트" href="https://www.google.com">구글</a>
+  <!--마우스 대면 나오는 설명      링크                  표시이름 -->
+  <a ping="데이터 전송받을 주소" title="링크설명" href="주소">링크표시명</a>
+  <!--ping은 링크 통계를 알려주며 서버 기술이 필요함, php학습--><br />
+  <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003239508264882236/unknown.png"
+    alt="me and mincie :)" width="200" height="170" />
+  <!--                               링크                                                         마우스 대면 나오는 설명(필수)    넓이         높이-->
+  <a href='https://github.com/2egn' target="_blank">
+    <!--       이동할 주소               이거 넣으면 새창에서 열림-->
+    <img src="https://cdn.discordapp.com/attachments/917078375099674664/1003233732519530598/20220509_013129.jpg"
+      alt="2egn" width="170" height="170" />
+  </a>
+  <----- my github <br />
+  <table bgcolor="skyblue" width="500">
+    <tr align="center">
+      <td style="color:red">일</td>
+      <td>월</td>
+      <td>화</td>
+      <td>수</td>
+      <td>목</td>
+      <td>금</td>
+      <td style="color:darkblue">토</td>
+    </tr>
+    <tr align="center">
+      <td bgcolor="gray"></td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td style="color:darkblue">6</td>
+    </tr>
+    <tr align="center">
+      <td style="color:red">7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td style="color:darkblue">13</td>
+    </tr>
+    <tr align="center">
+      <td style="color:red">14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td style="color:darkblue">20</td>
+    </tr>
+    <tr align="center">
+      <td style="color:red">21</td>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td style="color:darkblue">27</td>
+    </tr>
+    <tr align="center">
+      <td style="color:red">28</td>
+      <td>29</td>
+      <td>30</td>
+      <td>31</td>
+      <td bgcolor="gray" colspan="3"></td>
+    </tr>
+  </table>
+  <hr />
+  <form name="text">
+    <input type="text" name="text" value="text">
+  </form>
+  <form name="email">
+    <input type="email" name="email" value="email">
+  </form>
+  <form name="url">
+    <input type="url" name="url" value="url">
+  </form>
+  <pre>       1 per arrow               5 per arrow</pre>
+  <form name="number">
+    <input type="number" name="number" value="number">
+    <!--<input type='number' name='userPhoneNumber' pattern='\d*' />-->
+    <!--모바일에 적용할 수 있는 pattern.-->
+    <input type="number" name="stepnumber" value="stepnumber" step="5">
+  </form>
+  </a>
+  <br />
+  Phonenumber Input
+  <form name="tel">
+    <input type='tel' name='phone1' />-
+    <input type='tel' name='phone2' />-
+    <input type='tel' name='phone3' />
+  </form>
+  <br />
+  color input
+  <form name="color">
+    <input type="color" name="color">
+  </form>
+  <br />
+  <form name="slider">
+    <input type="range" id="range" name="slider" min="1" max="100" value="50" step="1" />
+  </form>
+  <p id='rangeValue'>50</p>
+  <form name="pw">
+    <input type="password" name="pw">
+  </form>
+  <br />
+  <form name="check">
+    meow <input type="checkbox" name="checkbox" />
+  </form>
+  <form name="radio">
+    owo <input type="radio" name="radiocircle" checked />
+    <!--checked 넣으면 체크된채로 나옴-->
+  </form>
+  <br />
+  my birthday :3
+  <form name="date">
+    <input type="date" name="date" value='2006-08-21' />
+    <input type='month' name='month' value='2006-08' />
+  </form>
+  <form name="math" oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+    <input type='number' id='num1' name='num1' value='0' /> +
+    <input type='number' id='num2' name='num2' value='0' /> =
+    <output for='num1, num2' name='result'></output>
+  </form>
+  <form name="button">
+    <input type="button" value="I'm not a robot" onclick="alert('i dont believe')">
+  </form> 단일파일 선택
+  <form name="file">
+    <input type="file" action="idk" method="post" enctype="multipart/form-data">
+  </form> 다중파일 선택
+  <form name="file">
+    <input type="file" action="idk" method="post" enctype="multipart/form-data" multiple />
+  </form>
 
-  </body>
+  <form name="submitting" action="result.php" method="post">
+    아이디 : <input type='text' name='id' /><br>
+    별명 : <input type='text' name='nickName' /><br>
+    <input type='submit' value='전송' />
+    <form name="remove" action="result.php" method="post">
+      <br>
+      <input type="text" name="typingarea" placeholder='type something' autofocus />
+      <!--autofocus가 있으면 우선적으로 그 텍스트창 클릭되있고 placeholder는 텍스트창에 회색으로 설명메세지뜨는거-->
+      <input type="reset" value='delete all' />
+    </form>
+  </form>
+  </form>
+  <form name="placeholder">
+    <input type="text" name="placeholder" placeholder="Autocomplete" autocomplete='on' />
+    <!--자동완성 autocomplete on-->
+  </form>
+  <br>
+  <form name="reqornot">
+    <input type="text" name="notreq" placeholder="선택입력" />
+    <input type="text" name="req" placeholder="필수입력" required />
+    <br>
+    <input type="submit" value="입력">
+  </form>
+  <form name="read">
+    <input type="text" name="readonly" value='Cat' readonly /><br>
+    <textarea name="textarea" readonly>Feline</textarea><br>
+  </form>
+  <form name="label">
+    <br><label for="id">click to focus</label><br><br>
+    <input type="text" id="id"><br>
+  </form>
+  <h1>Which pet do you prefer?</h1>
+  <select name="petchoose">
+    <option value="dog">dog</option>
+    <option value="cat" selected>cat</option>
+    <!--select-->
+    <option value="bird">bird</option>
+    <option value="rabbit">rabbit</option>
+  </select>
+  <br>
+  <br>
+  <input type="text" list="animal">
+  <datalist id="animal">
+    <option value="dog">dog</option>
+    <option value="cat">cat</option>
+    <!--datalist-->
+    <option value="bird">bird</option>
+    <option value="rabbit">rabbit</option>
+  </datalist>
+  <h1>Where do you want to travel?</h1>
+  <select name="travel">
+    <optgroup label="mountain">
+      <option value="alps">Swiss Alps</option>
+      <option value="fuji">Japan Fuji</option>
+    </optgroup>
+    <optgroup label="isle">
+      <option value="hawaii">USA Hawaii</option>
+      <option value="rabbit">Indonesia Bali</option>
+    </optgroup>
+  </select>
+  <br>
+  <br>
+  <progress value='0' max='100'></progress><br>
+  <meter min='0' max='100' low='30' optimum='50' value='0' high='80'></meter><br>
+  <b id="progressvalue"></b>
+  <p id="progressdone"></p>
+
+  <hr>
+  <form name="SignIn" action="MyHomepage.php" method="post">
+    <h1>Login Form</h1>
+    <input type="text" name="myname" value="" placeholder="name" maxlength="18" /><br>
+    <input type="password" name="mypassword" value="" placeholder="password" maxlength="20" /><br>
+    <input type="checkbox" name="perinfo" value="collectagree" />Agree to Personal info collection<br>
+    <a title="InfoCollectingLaw"
+      href="https://www.saramin.co.kr/zf_user/popup/clause-privacy?highlight=collectionAccess" target="_blank">PersonalInformation Collection and Usage Agreement</a><br>
+    Carrier<br>
+    <input type="radio" name="LG" value="LG" />LG
+    <input type="radio" name="LG" value="LG" />KT
+    <input type="radio" name="LG" value="LG" />SKT<br>
+    <input type="submit" name="submit" value="완료"/>
+  </form>
+  <br>
+  <hr>
+  <!--공간을 만듬, 구역들이 세로로 나열-->
+  <div>구역 1</div>
+  <div>구역 2</div>
+  <br><br>
+  <!--공간을 만듬, 구역들이 가로로 나열-->
+  <span>구역 1</span> 
+  <span>구역 2</span>
+  <br><hr>
+  
+  <!--주소입력할때쓰는태그(자동 이탤릭 적용)-->
+  <address>18th dimension, Lataekin 1th street 50, Kaneki Building</address>
+  <!--"tel:---" 사용으로 폰에서 전화걸수있음-->
+  <a href="tel:010-0000-0000">전화하기</a>
+  <!--네비게이션 역할을 하는 링크들을 모아놓은 영역에 사용합니다, 주로 사이트의 메뉴에 사용되기도 합니다.-->
+  <nav>
+    <ul>
+      <li><a href="">메인메뉴</a></li>
+      <li><a href="">소개</a></li>
+      <li><a href="">게시판</a></li>
+      <li><a href="">설정</a></li>
+      <li><a href="">기타</a></li>
+    </ul>
+  </nav>
+  <!--구간을 정의할때 사용, 제목-설명 구조일때 사용됨-->
+  <section>
+    <h1>Macbook Air M1</h1>
+    <p>Air의 흐름을 바꾸다.</p>
+  </section>
+  
+</body>
 </html>
