@@ -1,0 +1,13 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    Console.Write ("Your Name : ");
+    string MyName = Console.ReadLine ();
+    Console.Write ("Your Age : ");
+    int MyAge = int.Parse(Console.ReadLine ());
+    Console.Write ("Your Height : ");
+    float MyHeight = float.Parse(Console.ReadLine());
+    Console.WriteLine ("\n안녕하세요, 저는 " + MyName + "이고, " + MyAge + "입니다.\n제 키는 " +  MyHeight + "cm입니다!");
+  }
+}
