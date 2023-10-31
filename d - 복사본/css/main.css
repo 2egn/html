@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body{
+    margin:0;
+}
+.main_div{
+    background:url(../img/board.jfif);
+    border:0;
+    margin:0 auto;
+    width:900px;
+    height:250px;
+    padding:10px;
+}
+.tb_css{
+    border-collapse:collapse;
+    width:800px;
+    border: 0;
+    margin: 30px auto;
+}
+.tb_css tr{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    background-color: #fff;
+}
+.tb_css tr:first-of-type{
+    border-top: 0;
+    border-bottom: 3px solid #000;
+}
+.tb_css tr:last-of-type{
+    border-bottom: 3px solid #000;
+}
+.tb_css tr:hover td{
+    color:magenta;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13pt;
+}
+.tb_css td{
+    text-align: center;
+    font-size:12pt;
+    padding:5px;
+}
+.tb_css th{
+    padding: 5px;
+    font-size: 14pt;
+}
+.tb_css tr:nth-child(2n){
+    background_color:#e1e1e1;
+}
